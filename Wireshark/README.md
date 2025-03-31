@@ -45,3 +45,10 @@ Extra Filter
     Show Connection Releases - tcp.flags.reset==1 (bunch of red flags)
 
 Malware-traffuc-analysis.net is a website for wireshark practice.
+
+# Freeform Packet Analysis
+Dell_5f:ea:0a	Broadcast	ARP	60	Who has 192.168.1.179? Tell 192.168.1.196
+    This ARP protocol concerned me because instead of IP addresses it used names and was asking about IP addresses, but turns out this is benign, DNS lookup stuff.
+
+TCP	78	[TCP Dup ACK 957#1] 443 → 54668 [ACK] 
+    So turns out that TCP Dup ACK refers to Fast retransmissions stuff and filling in the gaps between packages when some stuff gets lost in transit. I guess it's not just UDP that stuff can get lost in.
