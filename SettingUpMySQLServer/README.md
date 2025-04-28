@@ -3,7 +3,7 @@ First you should download MySQL community version from their website
 
 Set up the Root User password
 
-![In mac you'll scroll down system settings in order to find the MySQL section](./SettingUpMySQLServer/systemSettings.png)
+![In mac you'll scroll down system settings in order to find the MySQL section](.\systemSettings.png)
 
 You also need to set a path for SQL to use the mysql commands on Mac Terminal
 
@@ -20,4 +20,4 @@ Use “mysql -u root -p” to set up mysql
 You can also download mysql workbench as a GUI
 
 Lightning symbol is the button to run the query 
-
+![Here's what MySQL Workbench looks like](.\workbench.png)
